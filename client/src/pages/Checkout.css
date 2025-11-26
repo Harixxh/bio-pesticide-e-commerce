@@ -1,0 +1,151 @@
+.checkout-page {
+  padding: 40px 0;
+}
+
+.checkout-page h1 {
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 30px;
+}
+
+.checkout-form {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.checkout-section {
+  margin-bottom: 40px;
+}
+
+.checkout-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.radio-option:hover {
+  border-color: var(--primary-color);
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.radio-option span {
+  font-weight: 500;
+}
+
+.payment-info {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #e8f5e9;
+  border-left: 4px solid var(--success-color);
+  border-radius: 5px;
+}
+
+.payment-info p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.order-summary {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  height: fit-content;
+  position: sticky;
+  top: 90px;
+}
+
+.order-summary h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.summary-items {
+  margin-bottom: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.summary-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.summary-item p {
+  flex: 1;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.item-quantity {
+  color: var(--gray);
+  font-size: 0.85rem;
+}
+
+.summary-totals {
+  margin-top: 20px;
+}
+
+.shipping-note {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: var(--gray-light);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: var(--gray);
+  text-align: center;
+}
+
+@media (max-width: 968px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .order-summary {
+    position: static;
+  }
+}

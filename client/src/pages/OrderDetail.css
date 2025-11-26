@@ -1,0 +1,78 @@
+.order-detail {
+  padding: 40px 0;
+}
+
+.order-detail-header {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.order-id {
+  color: var(--gray);
+  margin: 5px 0;
+}
+
+.order-date {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+.order-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 30px;
+}
+
+.order-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-card {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.section-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.order-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.address-info p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.delivery-info {
+  padding: 15px;
+  background-color: var(--gray-light);
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 968px) {
+  .order-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-detail-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

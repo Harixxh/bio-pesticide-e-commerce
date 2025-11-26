@@ -1,0 +1,83 @@
+.admin-users {
+  padding: 40px 0;
+}
+
+.admin-users h1 {
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.users-table-container {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table thead {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.users-table th,
+.users-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.users-table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.users-table tbody tr:hover {
+  background-color: var(--gray-light);
+}
+
+.status-badge.verified {
+  background-color: #d1e7dd;
+  color: #0a3622;
+}
+
+.status-badge.unverified {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.users-stats {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 30px;
+}
+
+.users-stats p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.users-stats strong {
+  color: var(--primary-color);
+}
+
+@media (max-width: 968px) {
+  .users-table-container {
+    overflow-x: scroll;
+  }
+
+  .users-table {
+    min-width: 700px;
+  }
+
+  .users-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

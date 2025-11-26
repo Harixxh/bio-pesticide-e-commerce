@@ -1,0 +1,49 @@
+.profile-page {
+  padding: 40px 0;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-content {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  max-width: 800px;
+}
+
+.profile-form .section-card {
+  background-color: var(--gray-light);
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.profile-form .section-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.flex-grow {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
